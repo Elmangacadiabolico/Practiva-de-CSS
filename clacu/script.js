@@ -89,9 +89,10 @@ btComa.addEventListener('click', () => {
     display.append(btComa.innerHTML)
 })
 
+// en el igual le agregamos que display.innerHTML sea igual a eval(display.innerHTML)
 let btIgual = document.getElementById("igual")
 btIgual.addEventListener('click', () => {
-    display.innerHTML = sumVars(display.innerHTML)
+    display.innerHTML = eval(display.innerHTML)
 })
 
 console.log(sumVars(["5", "+", "6"]))
